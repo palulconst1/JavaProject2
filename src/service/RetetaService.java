@@ -49,7 +49,7 @@ public class RetetaService {
         System.out.println(Arrays.toString(retete.toArray()));
     }
 
-    private void initializeRetete() {
+    private void initializeRetete() throws IOException {
         Scanner myObj = new Scanner(System.in);
         System.out.println("Nr Retete: ");
         int nr = Integer.parseInt(myObj.nextLine());
@@ -60,7 +60,9 @@ public class RetetaService {
             int pret = Integer.parseInt(myObj.nextLine());
             System.out.println("Diagnostic: ");
             String diagnostic = myObj.nextLine();
-            retete.add(new Reteta(id, pret, diagnostic));
+            Reteta r = new Reteta(id, pret, diagnostic);
+            retete.add(r);
+            addReteta(r);
         }
     }
 

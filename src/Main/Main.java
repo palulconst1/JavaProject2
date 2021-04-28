@@ -8,6 +8,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+
+//        Etapa 1
 //        Scanner myObj = new Scanner(System.in);
 //        int ok = 1;
 //        while(ok == 1) {
@@ -47,12 +49,27 @@ public class Main {
 //                    break;
 //            }
 //        }
-        final MedicService medicService = MedicService.getInstance();
-        final MedicService2 medicService2 = MedicService2.getInstance();
-        System.out.println(medicService.getMedics());
-        MedicMilitar m = new MedicMilitar("a","b","3");
-        medicService.addMedic(m);
-        System.out.println(medicService.getMedics());
+
+//        Etapa 2
+//        final MedicService medicService = MedicService.getInstance();
+//        final MedicService2 medicService2 = MedicService2.getInstance();
+//        System.out.println(medicService.getMedics());
+
+//        final ClientService clientService = ClientService.getInstance();
+//        final ClientService2 clientService2 = ClientService2.getInstance();
+//        System.out.println(clientService.getClients());
+
+//        final CabinetService cabinetService = CabinetService.getInstance();
+//        final CabinetService2 cabinetService2 = CabinetService2.getInstance();
+//        System.out.println(cabinetService.getCabinets());
+
+//        final ProgramareService programareService = ProgramareService.getInstance();
+//        final ProgramareService2 programareService2 = ProgramareService2.getInstance();
+//        System.out.println(programareService.getProgramares());
+
+//        final RetetaService retetaService = RetetaService.getInstance();
+//        final RetetaService2 retetaService2 = RetetaService2.getInstance();
+//        System.out.println(retetaService.getRetetas());
 
     }
 }

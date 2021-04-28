@@ -13,7 +13,7 @@ import java.sql.Timestamp;
 import java.util.*;
 
 public class ClientService2 {
-    private static final String PATH = "JavaProject/src/data/Client.csv";
+    private static final String PATH = "src/data/Client.csv";
     private static final String HEADER = "clientID,firstName,lastName,age,weight,height";
     private  static ClientService2 instance;
 
@@ -33,7 +33,7 @@ public class ClientService2 {
         while((line = reader.readLine()) != null){
             final String[] fields = line.split("\\s*,");
             if(fields.length > 0){
-                clients.add(new Client(fields[1], fields[2], Integer.parseInt(fields[3]), Integer.parseInt(fields[4]), Double.parseDouble(fields[6])));
+                clients.add(new Client(fields[1], fields[2], Integer.parseInt(fields[3]), Integer.parseInt(fields[4]), Double.parseDouble(fields[5])));
             }
         }
 
