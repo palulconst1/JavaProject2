@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Medic {
     private static int numberMedics = 0;
-    private int medicID;
+    private final int medicID;
     private String firstName;
     private String lastName;
 
@@ -20,8 +20,6 @@ public class Medic {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-
-    public void setMedicID(int x){ this.medicID = x; }
 
     public int getMedicID(){
         return medicID;

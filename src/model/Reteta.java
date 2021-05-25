@@ -2,7 +2,7 @@ package model;
 
 public class Reteta {
     private static int numberRetete = 0;
-    private int reteteID;
+    private final int reteteID;
     private int clientID;
     private int pret;
     private String diagnostic;
@@ -19,8 +19,6 @@ public class Reteta {
         this.pret = pret;
         this.diagnostic = diagnostic;
     }
-
-    public void setReteteID(int x){this.reteteID = x;}
 
     public int getReteteID(){
         return reteteID;
