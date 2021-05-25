@@ -2,7 +2,7 @@ package model;
 
 public class Programare {
     private static int numberProgramari = 0;
-    private final int programareID;
+    private int programareID;
     private int medicID;
     private int clientID;
     private int cabinetID;
@@ -25,6 +25,8 @@ public class Programare {
         this.ora = ora;
         this.data = data;
     }
+
+    public void setProgramareID(int x){this.programareID = x;}
 
     public int getProgramareID(){
         return programareID;

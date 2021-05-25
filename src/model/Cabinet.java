@@ -2,7 +2,7 @@ package model;
 
 public class Cabinet {
     private static int numberCabinets = 0;
-    private final int cabinetID;
+    private int cabinetID;
     private String adresa;
 
     public Cabinet() {
@@ -16,6 +16,8 @@ public class Cabinet {
         cabinetID = numberCabinets;
         this.adresa = adresa;
     }
+
+    public void setCabinetID(int x){ this.cabinetID = x; }
 
     public int getCabinetID(){
         return cabinetID;
